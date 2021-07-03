@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Resume</title>
+</head>
+<body>
+    <header>
+        <h1>Nicolas Gonzalez Albo Mendez</h1>
+        <address style="margin-bottom: 20px;">1 Infinite Loop, Cupertino, California, 95014</address>
+        <span style="font-size: 30px;">
+            <a href="https://github.com/albonicc">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/nicolasalbom">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/albonicc">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/albonicc">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </span>
+    </header>
+    <main>
+        <section>
+            <h2>EDUCATION</h2>
+            <div class="container">
+                <h3>Tecnologico de Monterrey Campus Puebla</h3>
+                <i>Bachelor of science in Digital Systems and Robotics</i>
+                <ul>
+                    <li>Expected graduation in December 2021</li>
+                    <li>GPA 83/100</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>EXPERIENCE</h2>
+            <div class="container">
+                <div class="content">
+                    <div>
+                        <h3>DevOps Engineer</h3>
+                        <i>Nimbus Coding Solutions</i>
+                        <img src="logo-nimbus.png" alt="Logo Nimbus" height="50px" width="50px" style="display: block;">
+                    </div>
+                    <div>
+                        <p class="no-margin">Puebla, Mexico</p>
+                        <p class="no-margin">March 2021 - Today</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Co-founder and partner. Responsible for creating and constantly upgrading the CI/CD pipeline of multiple projects by using Jenkins.</li>
+                    <li>Automatization of processes through bash scripting.</li>
+                    <li>Responsible for containerization of projects with Docker in order to deploy to AWS.</li>
+                </ul>
+                <div class="content">
+                    <div>
+                        <h3>Fullstack Developer</h3>
+                        <i>SANIVER</i>
+                        <img src="logo-saniver.jpeg" alt="Logo Saniver" height="50px" width="50px" style="display: block;">
+                    </div>
+                    <div>
+                        <p class="no-margin">Puebla, Mexico</p>
+                        <p class="no-margin">June 2020 - Today</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Worked with a team to design and deploy a Web Platform to manage all internal operations using Django Rest Framework in the backend for the API, React for the frontend, Redux for managing the state, Bootstrap and Sass for styles, and PostgreSQL as database.</li>
+                    <li>Before the creation of the Web Platform, all registers where handmade and kept in binders.</li>
+                    <li>Deployed in AWS EC2 using Docker and Nginx. Database deployed in RDS.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>MAJOR PROJECTS</h2>
+            <div class="container">
+                <h3>Neuralock</h3>
+                <i>DL / IoT solution that detects if a subject is using a face mask in order to open an intelligent lock</i>
+                <ul>
+                    <li>Responsible for deploying a Deep Learning model and the Flask REST API with Gunicorn inside a Docker container to a GCP compute engine instance.</li>
+                    <li>A Raspberry Pi with a camera was capturing video in realtime and then sending the video frames to the Deep Learning model through our REST API, then the model evaluated if the subject was using or not a face mask and then the API responded with the decision of the DL model in a JSON object. After that, the Raspberry Pi sends the JSON object to a NodeMCU who is responsible for locking/unlocking the door.</li>
+                </ul>
+                <h3>RaspG</h3>
+                <i>Automatic watering system made with Arduino and Raspberry Pi</i>
+                <ul>
+                    <li>Data was collected from different sensors and processed by an Arduino. A DC water pump was activated when soil humidity dropped.</li>
+                    <li>All the data was send to a Raspberry Pi through I2C protocol. A Python backend was in charge of receiving the data sent from the Arduino and displaying the data of the sensors in a 0.94’’ OLED display.
+                        </li>
+                    <li>NodeJS backend was responsible for showing the data captured by the sensors in a GUI created with ElectronJS and in a WIA dashboard through their SDK (wia.io).</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>SKILLS</h2>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-component">
+                    <h3>PROGRAMMING LANGUAGES</h3>
+                    <p style="margin:5px 0 0 0;">4 years: Java, C/C++</p>
+                    <p style="margin:0 0 5px 0;">2 years: Python, Javascript</p>
+                </div>
+                <div class="footer-component">
+                    <h3>TECHNOLOGIES</h3>
+                    <nav>
+                        <span style="display: block;">
+                            <a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML, </a>
+                            <a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS, </a>
+                            <a href="https://git-scm.com/">Git, </a>
+                            <a href="https://www.linux.org/">LINUX, </a>
+                            <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask, </a>
+                        </span>
+                        <span style="display: block;">
+                            <a href="https://www.shellscript.sh/">Bash Shell, </a>
+                            <a href="https://www.w3schools.com/sql/default.Asp">SQL, </a>
+                            <a href="https://www.djangoproject.com/">Django, </a>
+                            <a href="https://www.jenkins.io/">Jenkins, </a>
+                        </span>
+                        <span>
+                            <a href="https://www.docker.com/">Docker, </a>
+                            <a href="https://nodejs.org/es/">NodeJS, </a>
+                            <a href="https://es.reactjs.org/">React, </a>
+                            <a href="https://www.electronjs.org/">Electron</a>
+                        </span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<style>
+    header {
+        text-align: center;
+    }
+
+    main, footer {
+        padding: 0 150px;
+    } 
+
+    h2, h3, h4 {
+        margin: 0;
+    }
+
+    h2 {
+        padding-top: 20px;
+    }
+
+    a { 
+        color: inherit;
+        text-decoration: none;
+    } 
+
+    .fab {
+        margin: 5px;
+    }
+
+    .no-margin {
+        margin: 0;
+    }
+
+    .container {
+        border-top: 3px solid black;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .content, .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+</style>
+</html>
